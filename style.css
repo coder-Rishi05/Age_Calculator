@@ -1,0 +1,261 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: hsl(0, 0%, 94%);
+}
+
+main {
+  height: 100%;
+  width: 100%;
+  max-width: 1440px;
+  margin-inline: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 3rem;
+}
+
+section {
+  max-width: 700px;
+  width: 100%;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 32px;
+  border-bottom-right-radius: 50%;
+  padding: 2rem 0rem;
+}
+
+.top {
+  display: flex;
+  align-items: start;
+  gap: 1.2rem;
+  padding: 0rem 3rem;
+}
+
+.day {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+h5 {
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  /* color: hsl(0, 100%, 67%); */
+  letter-spacing: 2px;
+  color: hsl(0, 1%, 44%);
+}
+
+input {
+  padding: 0.6rem 0rem;
+  border-radius: 12px;
+  width: 10rem;
+  font-weight: 800;
+  padding-left: 0.8rem;
+  border: 0.5px solid hsl(0, 0%, 86%);
+  font-size: 2.4rem;
+  letter-spacing: 0.3rem;
+  /* outline: hs; */
+}
+
+input::placeholder {
+  /* letter-spacing: .5rem; */
+  color: hsl(0, 1%, 44%);
+  font-weight: 700;
+}
+
+button {
+  border: none;
+  outline: none;
+}
+
+input:focus {
+  outline-color: hsl(259, 100%, 65%);
+  caret-color: hsl(259, 100%, 65%);
+  /* outline: hsl(259, 100%, 65%); */
+}
+
+.mid {
+  padding: 0rem 2rem;
+  width: 100%;
+}
+
+.mid-line {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 0;
+  width: 100%;
+}
+
+.line {
+  width: 100%;
+  height: 1px;
+  background-color: hsl(0, 0%, 86%);
+}
+
+.submit {
+  width: 4.5rem;
+  height: 4rem;
+  background-color: hsl(259, 100%, 65%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all ease 0.2s;
+}
+
+.submit:hover {
+  transition: all ease 0.2s;
+  background-color: hsl(0, 0%, 8%);
+  cursor: pointer;
+}
+
+img {
+  width: 70%;
+}
+
+h1 {
+  font-size: 4rem;
+  font-style: italic;
+}
+
+span {
+  padding-inline: 11px;
+  color: hsl(259, 100%, 65%);
+}
+
+.error1{
+  color: red;
+  font-size: 14px;
+  font-style: italic;
+  display: none;
+}
+
+@media (max-width: 768px) {
+  input {
+    max-width: 8rem;
+    width: 100%;
+    font-weight: 800;
+    padding-left: 0.8rem;
+    font-size: 1.8rem;
+  }
+
+  .submit {
+    width: 4.5rem;
+    height: 4rem;
+    background-color: hsl(259, 100%, 65%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all ease 0.2s;
+    position: relative;
+    right: 50%;
+  }
+}
+
+@media (max-width: 668px) {
+  section {
+    max-width: 550px;
+  }
+
+  .top {
+    gap: 1rem;
+    padding: 0rem 2rem;
+  }
+
+  input {
+    width: 8rem;
+    font-size: 2rem;
+  }
+
+  .mid {
+    padding: 0rem 2rem;
+    width: 100%;
+  }
+
+  .submit {
+    width: 5rem;
+    height: 4rem;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 500px) {
+  section {
+    max-width: 350px;
+    width: 100%;
+  }
+
+  .top {
+    padding: 0rem 2rem;
+  }
+
+  input {
+    padding: 0.4rem 0rem;
+    border-radius: 8px;
+    width: 3.8rem;
+    font-weight: 800;
+    padding-left: 0.4rem;
+    border: 0.5px solid hsl(0, 0%, 86%);
+    font-size: 0.8rem;
+    letter-spacing: 1.5px;
+  }
+
+  .mid {
+    padding: 0rem 2rem;
+  }
+
+  .mid-line {
+    padding: 1rem 0;
+  }
+  .submit {
+    width: 2.3rem;
+    height: 2.1rem;
+  }
+  img {
+    width: 60%;
+  }
+
+  h5 {
+    font-size: 0.6rem;
+    letter-spacing: 1px;
+  }
+
+  h1 {
+    font-size: 1.1rem;
+    font-style: italic;
+  }
+
+  span {
+    padding-inline: 11px;
+    color: hsl(259, 100%, 65%);
+  }
+}
+
+/* 
+Purple: hsl(259, 100%, 65%)
+Light red: 
+White: hsl(0, 0%, 100%)
+Off white: 
+Light grey: hsl(0, 0%, 86%)
+Smokey grey: hsl(0, 1%, 44%)
+Off black: hsl(0, 0%, 8%)
+
+
+Font size (inputs): 32px
+
+Family: Poppins
+Weights: 400i, 700, 800i
+
+*/
